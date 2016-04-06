@@ -1,0 +1,230 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".SettingsActivity$PlaceholderFragment">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent">
+
+        <TextView
+            android:text="あなたの地区は、、、"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:layout_alignParentLeft="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent">
+
+        <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/localname"
+            android:spinnerMode="dialog"
+            android:layout_below="@+id/textView" />
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="毎日のチェック時間は次の時間です。"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/localname"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="今日のゴミ"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentLeft="true" />
+
+    <CheckBox
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="朝５時"
+        android:id="@+id/chk5"
+        android:checked="false"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="28dp"
+        android:enabled="false" />
+
+    <CheckBox
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="朝６時"
+        android:id="@+id/chk6"
+        android:layout_below="@+id/chk5"
+        android:layout_alignLeft="@+id/chk5"
+        android:checked="false" />
+
+    <CheckBox
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="朝７時"
+        android:id="@+id/chk7"
+        android:layout_below="@+id/chk6"
+        android:layout_alignLeft="@+id/chk6"
+        android:checked="false" />
+
+    <TextView
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="明日のゴミ"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/chk7"
+        android:layout_alignParentLeft="true" />
+
+    <CheckBox
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="夜１９時"
+        android:id="@+id/chk19"
+        android:layout_below="@+id/textView4"
+        android:layout_alignLeft="@+id/chk7"
+        android:checked="false" />
+
+    <CheckBox
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="夜２０時"
+        android:id="@+id/chk20"
+        android:layout_below="@+id/chk19"
+        android:layout_alignLeft="@+id/chk19"
+        android:checked="false" />
+
+    <CheckBox
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="夜２１時"
+        android:id="@+id/chk21"
+        android:layout_below="@+id/chk20"
+        android:layout_alignLeft="@+id/chk20"
+        android:checked="false" />
+
+    <TextView
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="※ チェック下時間になると、スマフォに連絡します。"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="※ 朝と夜のチェック機能はただ今作成中です！"
+        android:id="@+id/textView6"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" />
+
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="　このアプリは富谷町のホームーページから情報を使用しています。"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="収集日程のお知らせ:"
+        />
+    <TextView
+        android:id="@+id/settings_hp_to"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="http://www.town.tomiya.miyagi.jp/guide/svGuideDtl.aspx?servno=408"
+        />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="　このアプリは富谷町役場とは関係のない個人が作っています。従いまして、ご意見、ご感想、ご指摘につきましては。町にお問い合わせは避けて以下のメールに頂くようお願いいたします。"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/settings_mail_to"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="メール： arcanum.jp@gmail.com"
+         />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="※ タップでメーラーが起動します。"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" />
+
+</LinearLayout>
